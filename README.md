@@ -1,1 +1,1 @@
-# receives 
+# receive
