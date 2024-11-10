@@ -1,4 +1,6 @@
 n=int(input("enter number"))
 a=0
 while(n>0):
-    print(n*n)
+    if(n<=10):
+        print(n*n)
+print(n)
