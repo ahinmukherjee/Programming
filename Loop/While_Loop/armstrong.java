@@ -9,6 +9,7 @@ import java.util.*;
       r= n%10;
       arm=(r*r*r)+arm;
       n=n/10;
+      sc.close();
   }
       if( c==arm){
       System.out.println("number is armstrong");
@@ -16,6 +17,6 @@ import java.util.*;
       else {
       System.out.println("number is not armstrong");
   }
-  sc.close();
+
  }
 }
