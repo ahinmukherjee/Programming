@@ -10,6 +10,7 @@ for x in a:
             b[j]=b[j-1]
             b[j]=x
             k=k+1
-# print(b)
-print(x)
-print(k)
+# print(x)
+# # print(b)
+# print(x)
+# print(k)
