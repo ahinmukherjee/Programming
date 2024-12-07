@@ -1,13 +1,11 @@
-n=12
+n=-12
 s=21
 t=34
-if(n>s) or (t<n) or (t<n):
-    print("large number is",n)
-    print("small2 number is",t)
+if(n>s) or (n>t):
+    print("large number is",t)
     print("small number is",s)
-elif(s>n) or (t<s) or (n<s):
-    print("large number is",s)
-    print("small numbers is",t)
+elif(s>n) or (s>t):
+    print("large numbers is",t)
     print("small number is",n)
 else:
     print("number is qual")
