@@ -1,4 +1,10 @@
 n=int(input("enter number"))
-for i in range(n):
-    if(n%1==0 or n%i==0):
-        print("prime is",i)
+prime_is= True
+for i in range(2, int(n ** 0.5)+1):
+    if(n%i==0): 
+       prime_is= False
+       break
+if prime_is and n>1:
+    print(n,"number is prime")
+else:
+    print(n,"is not prime")
