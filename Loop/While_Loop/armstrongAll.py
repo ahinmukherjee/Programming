@@ -1,8 +1,12 @@
 n=int(input("enter range"))
-c=n
+c=len(str(n))
 arm=0
-if(c==arm):
-    print(arm)
+while(n>0):
+    r= n%10
+    arm = arm+ (r**c)
+    n=n//10
+if(n==arm):
+    print("arm is")
 else:
-    print(arm)
+    print("is not arm")
  
