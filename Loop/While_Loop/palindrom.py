@@ -1,4 +1,4 @@
-n=int(input("enter range"))
+n=int(input("enter range:"))
 c=n
 arm=0
 while(n>0):
