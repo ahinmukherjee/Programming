@@ -1,0 +1,6 @@
+a=(2,3,4,-7)
+b=(5,6,7)
+a=set(a)
+b=set(b)
+c=b.union(a)
+print(c)
