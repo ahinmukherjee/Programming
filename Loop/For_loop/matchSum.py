@@ -1,8 +1,9 @@
-# s=10
-# c=[]
-# n=int(input("enter number:"))
-# for i in range(n):
-#     for j in range(n):
-#         if(i+j==s):
-#            c.append(n[i],n[j])
-#            print(c)
+s=22
+n=int(input("enter number:"))
+for i in range(n):
+    for j in range(i,n):
+        if(i+j==s):
+            print(i,j)
+        for k in range(j,n):
+            if(i+j+k==s):
+                print(i,j,k)
