@@ -1,5 +1,5 @@
 import java.util.*;
-  class prime{
+  class Prime{
   public static void main(String args[]){
       int i,n,count=0;
       Scanner sc= new Scanner(System.in);
