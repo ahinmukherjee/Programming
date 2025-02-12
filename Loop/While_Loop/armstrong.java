@@ -1,5 +1,5 @@
 import java.util.*;
-  class armstrong{
+  class Armstrong{
   public static void main(String args[]){
       int r,n,c,arm=0;
       Scanner sc= new Scanner(System.in);
