@@ -1,7 +1,7 @@
 import java.applet.Applet;
 import java.awt.Graphics;
 import  java.awt.Color;
-import java.util.Calendar;
+//import java.util.Calendar;
 
 public class Clock extends Applet{
     public void init(){
