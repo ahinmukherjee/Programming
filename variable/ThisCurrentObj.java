@@ -1,4 +1,4 @@
-class A{
+class AThis{
     void f() {
         System.out.println(this);
     }
@@ -6,7 +6,7 @@ class A{
 
 public class ThisCurrentObj {
     public static void main(String args[]){
-        A r= new A();
+        AThis r= new AThis();
         r.f(); // A@1db9742
     }
 }

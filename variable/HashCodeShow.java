@@ -1,7 +1,7 @@
-class A {
+class CA {
     int a;
     int b;
-  A(int x, int y) {
+  CA(int x, int y) {
     a=x;
     b=y;
   }
@@ -14,9 +14,9 @@ class A {
 
 public class HashCodeShow {
     public static void main(String args[]){
-        A r= new A(3,4); // 7
-	    A r1= new A(6,4); // 10
-        r.add();
+      CA r= new CA(3,4); // 7
+	    CA r1= new CA(6,4); // 10
+      r.add();
 	    System.out.println(r.hashCode()); //31168322
 	    System.out.println(r1.hashCode()); //   17225372
       

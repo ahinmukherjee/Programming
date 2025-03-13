@@ -1,12 +1,13 @@
 class A{
     A (int x){
         int s= x * x;
-        System.out.println("Multiplication ="+s);
+        System.out.println("Multiplication is= " +s);
    }
     A (int x, int y){
      int s= x + y;
-     System.out.println("Sum ="+s);
+     System.out.println("Sum is= " +s);
    }
+	
 }
 class ConstructorOverloading {
     public static void main(String args[]){

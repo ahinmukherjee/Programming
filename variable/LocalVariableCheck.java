@@ -1,7 +1,7 @@
-class A {
+class AB {
     int a;
     int b;
-  A(int x, int y) {
+  AB(int x, int y) {
     a=x;
     b=y;
   }
@@ -14,7 +14,7 @@ class A {
 
 public class LocalVariableCheck {
     public static void main(String args[]){
-        A r= new A(3,4);
+        AB r= new AB(3,4);
         r.add(); //7
         }
 }
