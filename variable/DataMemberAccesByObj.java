@@ -9,7 +9,6 @@ class Data{
 public class DataMemberAccesByObj {
     public static void main(String[] args) {
         Data t= new Data();
-        t.c;
-        System.out.println("sum is"+c);
+        System.out.println("sum is"+t.c);
     }
 }
