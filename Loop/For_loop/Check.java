@@ -1,5 +1,5 @@
 import java.util.*;
-class Practice{
+class Practices{
     public static void main(String[] args) {
         int n,r;
         int count=0;
