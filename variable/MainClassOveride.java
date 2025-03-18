@@ -7,9 +7,9 @@ class MainClassOveride {
 	public static void main(int a, int b){
 	    int s= a*b;
 	    System.out.println(s);
+		main(2);
 	}
     public static void main(String args[]){
-	    main(2);
 	    main(2,3);
       }   
 }
