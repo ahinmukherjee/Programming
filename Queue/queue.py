@@ -33,14 +33,16 @@ class Queue:
 front=rear=None
 a=Queue()
 while True:
-    print(1: "Create")
-    print(2:"Delete")
-    print(3:"Display")
-    
-ch=input("your choice")
-if ch==1:
-    a.create()
-elif ch==2:
-   a.delete()
-elif ch==3:
-   a.display()
+    print("1: Create")
+    print("2: Delete")
+    print("3: Display")
+
+    ch=int(input("your choice"))
+    if ch==1:
+        a.create()
+    elif ch==2:
+        a.delete()
+    elif ch==3:
+       a.display()
+    elif ch==4:
+        break
