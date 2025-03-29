@@ -1,4 +1,4 @@
-class A {
+class ABA {
     void f(){
 	System.out.println("hello");
       
@@ -10,7 +10,7 @@ class A {
      
 }
 
-class B extends A {
+class B extends ABA {
 	void g(int a, int b){
 	    int s= a+b;
 	    System.out.println("Addition is ="+s);
@@ -19,7 +19,7 @@ class B extends A {
 
 public class OverloadMethodSubclass{ 
     public static void main(String args[]){
-        A r= new B();
+        ABA r= new B();
         r.f(); // hello
 	    r.f(2);// Multiplication is=4
 	    B r1=(B)r;

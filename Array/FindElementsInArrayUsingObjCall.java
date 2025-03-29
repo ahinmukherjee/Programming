@@ -1,4 +1,4 @@
-class Array{
+class Arrays{
     int[] arr = {10, 20, 30, 40, 50};
     int target = -30;
     boolean found = false;
@@ -17,7 +17,7 @@ void find(){
 
 public class FindElementsInArrayUsingObjCall {
     public static void main(String[] args) {
-        Array a= new Array();
+        Arrays a= new Arrays();
         a.find();
         
     }
