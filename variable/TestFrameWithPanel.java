@@ -4,14 +4,14 @@ import java.awt.event.*;
 
 public class TestFrameWithPanel {
     public static void main(String args[]){
-        SampleFram st= new SampleFram();
+        SampleFrams st= new SampleFrams();
         st.setVisible(true);
         st.setDefaultCloseOperation(3);
     }
 }
 
-class SampleFram extends JFrame{
-	public SampleFram(){
+class SampleFrams extends JFrame{
+	public SampleFrams(){
 		Toolkit kit =Toolkit.getDefaultToolkit();
 		Dimension scrsize= kit.getScreenSize();
 		int w= scrsize.width;
@@ -20,12 +20,12 @@ class SampleFram extends JFrame{
 		setLocation(w/4,h/4);
 		setTitle("Welcome in Frame");
 		setResizable(false);
-		MyPanel p = new MyPanel();
+		MyPanelIs p = new MyPanelIs();
 		add(p);
 	}
 }
 
-class MyPanel extends JPanel{
+class MyPanelIs extends JPanel{
 	public void paintComponent(Graphics g){
 		super.paintComponent(g);
 		setBackground(Color.pink);
@@ -35,7 +35,7 @@ class MyPanel extends JPanel{
 		g.drawString("I Love Java",100,200); 
 	}
 	JButton exitButton;
-	public MyPanel(){
+	public MyPanelIs(){
 		exitButton = new JButton("Exit");
 		add(exitButton);
 		ExitAction ec= new ExitAction();

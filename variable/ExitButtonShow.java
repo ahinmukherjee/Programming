@@ -19,12 +19,12 @@ class SampleFram extends JFrame{
 		setLocation(w/4,h/4);
 		setTitle("Welcome in Frame");
 		setResizable(false);
-		MyPanel p = new MyPanel();
+		PanelMy p = new PanelMy();
 		add(p);
 	}
 }
 
-class MyPanel extends JPanel{
+class PanelMy extends JPanel{
 	public void paintComponent(Graphics g){
 		super.paintComponent(g);
 		setBackground(Color.yellow);
@@ -33,7 +33,7 @@ class MyPanel extends JPanel{
 		g.drawString("I Love Java",100,200); 
 	}
 	JButton exitButton;
-	public MyPanel(){
+	public PanelMy(){
 		exitButton = new JButton("Exit");
 		add(exitButton);
 		

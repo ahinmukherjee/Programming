@@ -3,15 +3,15 @@ import javax.swing.*;
 
 public class FrameString {
 	public static void main(String args[]){
-		SampleFram st= new SampleFram();
+		SampleFrame st= new SampleFrame();
 		st.setVisible(true);
 		st.setDefaultCloseOperation(3);
 		}  
 }
 
 
-class SampleFram extends JFrame{
-	public SampleFram(){
+class SampleFrame extends JFrame{
+	public SampleFrame(){
 	Toolkit kit =Toolkit.getDefaultToolkit();
 	Dimension scrsize= kit.getScreenSize();
 	int w= scrsize.width;

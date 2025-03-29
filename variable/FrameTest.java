@@ -3,14 +3,14 @@ import javax.swing.*;
 
 public class FrameTest {
 	public static void main(String args[]){
-        SampleFram st= new SampleFram();
+        FrameSample st= new FrameSample();
         st.setVisible(true);
         st.setDefaultCloseOperation(3);
         }
 }
 
-class SampleFram extends JFrame{
-	public SampleFram(){
+class FrameSample extends JFrame{
+	public FrameSample(){
 	Toolkit kit =Toolkit.getDefaultToolkit();
 	Dimension scrsize= kit.getScreenSize();
 	int w= scrsize.width;

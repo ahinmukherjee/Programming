@@ -5,13 +5,13 @@ public class PowerCalculate {
 }
 
 class TryTest{
-	TryTest(power, base){
-		int p;
-		int b;
-		for (int i=1; i<=b; i++){
-			int a = p*i;
+	TryTest(int power, int base){
+		int a=1;
+		for (int i=1; i<=base; i++){
+			int a = power*a;
 		}
 		System.out.println(a);
-	}	
+	}
+	
 }
 

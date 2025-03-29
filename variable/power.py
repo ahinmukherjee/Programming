@@ -1,8 +1,7 @@
 a=3
 b=2
-s=0
+s=1
 
 for i in range(a):
-    s=i*b
-    i+=1
+    s+=i**b
 print(s)
