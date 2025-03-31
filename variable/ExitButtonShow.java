@@ -3,14 +3,14 @@ import javax.swing.*;
 
 public class ExitButtonShow {
     public static void main(String args[]){
-        SampleFram st= new SampleFram();
+        SampleMyFram st= new SampleMyFram();
         st.setVisible(true);
         st.setDefaultCloseOperation(3);
     } 
 }
 
-class SampleFram extends JFrame{
-	public SampleFram(){
+class SampleMyFram extends JFrame{
+	public SampleMyFram(){
 		Toolkit kit =Toolkit.getDefaultToolkit();
 		Dimension scrsize= kit.getScreenSize();
 		int w= scrsize.width;
@@ -19,12 +19,12 @@ class SampleFram extends JFrame{
 		setLocation(w/4,h/4);
 		setTitle("Welcome in Frame");
 		setResizable(false);
-		PanelMy p = new PanelMy();
+		SamplePanelMy p = new SamplePanelMy();
 		add(p);
 	}
 }
 
-class PanelMy extends JPanel{
+class SamplePanelMy extends JPanel{
 	public void paintComponent(Graphics g){
 		super.paintComponent(g);
 		setBackground(Color.yellow);
@@ -33,7 +33,7 @@ class PanelMy extends JPanel{
 		g.drawString("I Love Java",100,200); 
 	}
 	JButton exitButton;
-	public PanelMy(){
+	public SamplePanelMy(){
 		exitButton = new JButton("Exit");
 		add(exitButton);
 		

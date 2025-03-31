@@ -10,10 +10,9 @@ class TryPowerCalculate{
 	void f(int base,int power){
 		int result=1;
 		while(power>0){
-		  int result= result*power;
-		  power--;
-		  
+		   result= result*base;
+		  power--;	  
 		}
-		System.out.println("Result",+result);
+		System.out.println("Result is:"+result);
 	}	
 }

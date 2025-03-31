@@ -20,12 +20,12 @@ class SampleFrame extends JFrame{
 	setLocation(w/4,h/4);
 	setTitle("Hello");
 	setResizable(false);
-	MyPanel p= new MyPanel(); 
+	MyPanelShow p= new MyPanelShow(); 
 	add(p);
 	}
 }
 
-class MyPanel extends JPanel{
+class MyPanelShow extends JPanel{
 	public void paintComponent(Graphics g){
 	super.paintComponent(g);
 	setBackground(Color.yellow);

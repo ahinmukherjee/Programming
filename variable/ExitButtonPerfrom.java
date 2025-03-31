@@ -39,13 +39,13 @@ class MyPanel extends JPanel{
 	public MyPanel(){
 		exitButton = new JButton("Exit");
 		add(exitButton);
-		ExitAction ec= new ExitAction();
+		ExitButtonAction ec= new ExitButtonAction();
 		exitButton.addActionListener(ec);
 		
 	}
 }
 
-class ExitAction implements ActionListener{
+class ExitButtonAction implements ActionListener{
 	public void actionPerformed(ActionEvent ac){
 		System.exit(0);
 	}

@@ -1,17 +1,16 @@
-public class PowerCalculate {
-   public static void main(String args[]){
-        TryTest st= new TryTest(2,3);    
-    }
+public class PowerCalculate {  public static void main(String args[]){
+	new TryTest(2,4);    
+}
 }
 
 class TryTest{
-	TryTest(int power, int base){
-		int a=1;
-		for (int i=1; i<=base; i++){
-			int a = power*a;
-		}
-		System.out.println(a);
+TryTest(int base, int power){
+	int a=1;
+	for (int i=1; i<=power; i++){
+		 a = base*a;
 	}
-	
+	System.out.println("Result is:"+a);
+}
+
 }
 
