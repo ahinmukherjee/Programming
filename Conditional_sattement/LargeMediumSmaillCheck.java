@@ -3,30 +3,30 @@ import java.util.Scanner;
 public class LargeMediumSmaillCheck {
     public static void main(String args[]){
 	    Scanner sc = new Scanner(System.in);
-	    System.out.println("Enter 1st value");
-	    System.out.println("Enter 2nd value");
-	    System.out.println("Enter 3rd value");
+	    System.out.print("Enter 1st value");
+	    System.out.print("Enter 2nd value");
+	    System.out.print("Enter 3rd value");
 
 	    float first = sc.nextFloat();
 	    float second = sc.nextFloat();
 	    float third = sc.nextFloat();
 
 	
-	    DiscountOffer do = new DiscountOffer();
-	    do.discountCalculate(first, second, third);
+	   NmberCalculate no = new NmberCalculate();
+	    no.discountCalculate(first, second, third);
         sc.close();
     }
 }
 
-class DiscountOffer{
+class NmberCalculate{
 	void discountCalculate(float n, float y, float z ){
-		if(y<=n=>z){
+		if(y<=n && n<=z){
 			System.out.println("Large value"+z);
 			System.out.println("Medium value"+n);
 			System.out.println("Small value"+y);
 		}
 
-		else if(n<=y=>z){
+		else if(n<=y&& y<=z){
 			System.out.println("Large value"+z);
 			System.out.println("Medium value"+y);
 			System.out.println("Small value"+n);

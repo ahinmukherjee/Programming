@@ -25,65 +25,76 @@ class FrameSample extends JFrame{
 	}
 }
 
-class MyPanel extends JPanel{
+class MyPanel extends JPanel {
+    JButton yellowButton, greenButton, blueButton, redButton, exitButton;
+    JLabel label;
 
-	JButton yellowButton, greenButton, blueButton, redButton, exitButton;
-	public MyPanel(){
-		yellowButton = new JButton("Yellow");
-		greenButton = new JButton("Green");
-		blueButton = new JButton("Blue");
-		redButton = new JButton("Red");
-		exitButton = new JButton("Exit");
+    public MyPanel() {
+        yellowButton = new JButton("Yellow");
+        greenButton = new JButton("Green");
+        blueButton = new JButton("Blue");
+        redButton = new JButton("Red");
+        exitButton = new JButton("Exit");
 
-		add(yellowButton);
-		add(greenButton);
-		add(blueButton);
-		add(redButton);
-		add(exitButton);
-		
-	ColorAction yellowAction = new ColorAction(Color.yellow);
-	ColorAction greenAction = new ColorAction(Color.green);
-	ColorAction blueAction = new ColorAction(Color.blue);
-	ColorAction redAction = new ColorAction(Color.red);
+        label = new JLabel("Welcome in Frame");
+        add(label);
 
-	yellowButton.addActionListener(yellowAction);
-	greenButton.addActionListener(greenAction);
-	blueButton.addActionListener(blueAction);
-	redButton.addActionListener(redAction);
+        add(yellowButton);
+        add(greenButton);
+        add(blueButton);
+        add(redButton);
+        add(exitButton);
 
-	TextAction textYellowButton = new TextAction("hello");
-	yellowButton.addActionListener(textYellowButton);
-	
-	ExitAction ea = new ExitAction();
-	exitButton.addActionListener(ea);	
-	}
+        ColorAction yellowAction = new ColorAction(Color.YELLOW);
+        ColorAction greenAction = new ColorAction(Color.GREEN);
+        ColorAction blueAction = new ColorAction(Color.BLUE);
+        ColorAction redAction = new ColorAction(Color.RED);
 
+        yellowButton.addActionListener(yellowAction);
+        greenButton.addActionListener(greenAction);
+        blueButton.addActionListener(blueAction);
+        redButton.addActionListener(redAction);
 
-	class ColorAction implements ActionListener{
-		public ColorAction(Color c){
-			bgcolor= c;
-		}
-		public void actionPerformed(ActionEvent ae){
-			setBackground(bgcolor);
-		}
-		Color bgcolor;
-	}
+        TextAction textYellowButton = new TextAction("Hello");
+        yellowButton.addActionListener(textYellowButton);
 
+ 		TextAction textGreenButton = new TextAction("Hello dear");
+        greenButton.addActionListener(textGreenButton);
 
-	class TextAction implements ActionListener{
-		public TextAction(String s){
-			bgstring= s;
-		}
-		public void actionPerformed(ActionEvent ae){
-			setText(bgstring);
-		}
-		String bgstring;
-	}
+ 		TextAction textBlueButton = new TextAction("Hii");
+       	blueButton.addActionListener(textBlueButton);
+
+        ExitAction ea = new ExitAction();
+        exitButton.addActionListener(ea);
+    }
+
+    class ColorAction implements ActionListener {
+        Color bgcolor;
+
+        public ColorAction(Color c) {
+            bgcolor = c;
+        }
+
+        public void actionPerformed(ActionEvent ae) {
+            setBackground(bgcolor);
+        }
+    }
+
+    class TextAction implements ActionListener {
+        String bgstring;
+
+        public TextAction(String s) {
+            bgstring = s;
+        }
+
+        public void actionPerformed(ActionEvent ae) {
+            label.setText(bgstring);
+        }
+    }
+
+    class ExitAction implements ActionListener {
+        public void actionPerformed(ActionEvent ae) {
+            System.exit(0);
+        }
+    }
 }
-
-class ExitAction implements ActionListener{
-	public void actionPerformed(ActionEvent ae){
-		System.exit(0);
-	}
-}
-
