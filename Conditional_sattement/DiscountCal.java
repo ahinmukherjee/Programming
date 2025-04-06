@@ -13,17 +13,20 @@ public class DiscountCal {
             price1 = price - r;
             System.out.println("Original Price: " + price);
             System.out.println("Discounted Price: " + price1);
-        } else if (price >= 1000) {
+        } 
+	else if (price >= 1000) {
             r = price * (15.0 / 100);
             price1 = price - r;
             System.out.println("Original Price: " + price);
             System.out.println("Discounted Price: " + price1);
-        } else if (price >= 500) {
+        } 
+	else if (price >= 500) {
             r = price * (5.0 / 100);
             price1 = price - r;
             System.out.println("Original Price: " + price);
             System.out.println("Discounted Price: " + price1);
-        } else {
+        } 
+	else {
             System.out.println("Not available for discount offer");
         }
 
