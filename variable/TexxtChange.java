@@ -4,14 +4,14 @@ import java.awt.event.*;
 
 public class TexxtChange {
 	public static void main(String args[]){
-        FrameSample st= new FrameSample();
+        FramesSampled st= new FramesSampled();
         st.setVisible(true);
         st.setDefaultCloseOperation(0);
         }
 }
 
-class FrameSample extends JFrame{
-	public FrameSample(){
+class FramesSampled extends JFrame{
+	public FramesSampled(){
 	Toolkit kit =Toolkit.getDefaultToolkit();
 	Dimension scrsize= kit.getScreenSize();
 	int w= scrsize.width;
@@ -20,16 +20,16 @@ class FrameSample extends JFrame{
 	setLocation(w/4,h/4);
 	setTitle("Hello");
 	setResizable(false);
-	MyPanel mp = new MyPanel();
+	MyPanels mp = new MyPanels();
 	add(mp);
 	}
 }
 
-class MyPanel extends JPanel {
+class MyPanels extends JPanel {
     JButton yellowButton, greenButton, blueButton, redButton, exitButton;
     JLabel label;
 
-    public MyPanel() {
+    public MyPanels() {
         yellowButton = new JButton("Yellow");
         greenButton = new JButton("Green");
         blueButton = new JButton("Blue");
