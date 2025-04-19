@@ -3,23 +3,26 @@ import java.util.Scanner;
 public class PasswordCheck {
     public static void main(String args[]){
 	    Scanner sc = new Scanner(System.in);
-	    System.out.print("Enter Username\n");
+	    System.out.print("Enter Username: ");
  	    String username = sc.nextLine();
-	    System.out.print("Enter Password");
+	    System.out.print("Enter Password: ");
 	    String password = sc.nextLine();
 	    PasswordIdentify pc= new PasswordIdentify();
-		pc.PasswordCheckr();
+		pc.PasswordCheckr(password, sc);
         sc.close();
     }
 }
 
 
 class PasswordIdentify{
-	void PasswordCheckr(){
+	void PasswordCheckr(String password, Scanner sc){
 		System.out.print("Plz ennter your password");
 		String a= sc.nextLine();
-		if(a!=password){
-			System.out.print("Plz enter your correct Password");
-		}
+		if(!a.equals(password)){
+            System.out.println("Incorrect password. Please try again.");
+        }
+		else {
+            System.out.println("Password verified successfully.");
+        }
 	}
 }

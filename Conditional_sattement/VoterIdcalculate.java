@@ -13,13 +13,13 @@ public class VoterIdcalculate {
     
 class Votercalculate{
     void ageCalculate(int n){
-            if(18<=n){
-                System.out.println("Voter card is availabel");
-            }
-    
-            else{
-                System.out.println("Voter card not availabel");
-            }
+        if(n<=18){
+            System.out.println("Voter card is not availabel");
+        }
+
+        else{
+            System.out.println("Voter card is availabel");
+        }
     
     
     }
