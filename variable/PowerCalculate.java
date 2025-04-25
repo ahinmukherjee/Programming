@@ -10,7 +10,7 @@ TryTest(int base, int power){
 		a = base*a;
 	}
 	System.out.println("Result is:"+a);
-}
+	}
 
 }
 
