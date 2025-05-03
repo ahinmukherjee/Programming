@@ -17,44 +17,58 @@ class CalculatorTests {
 	}
 	void divi(int a, int b){
 		int vag= a/b;
-		System.out.println("Divition is:" +vag);	
+		System.out.println("Division is:" +vag);	
 	}	
 }
 
 public class CalculatorViaSwitchCase {
     public static void main(String args[]){
-	Scanner sc= new Scanner(System.in);
-	System.out.println("Enter 1 for Addition || Enter 2 for Subtraction || Enter 3 for Multiplication || Enter 4 for Divition|| Enter 5 for Exit");
-	try{
-		int choices=sc.nextInt();
-		System.out.println("Enter first number");
-     		int num1 = sc.nextInt();
-		System.out.println("Enter second number");
-     		int num2 = sc.nextInt();
+		Scanner sc= new Scanner(System.in);
 		CalculatorTests rn= new CalculatorTests();
-	
-		switch(choices){
-		case 1: 
-			rn.add(num1, num2);
-			break;
-		case 2: 
-			rn.subs(num1, num2);
-			break;
-		case 3: 
-			rn.multi(num1, num2);
-			break;
-		case 4: 
-			rn.divi(num1, num2);
-			break;
-		case 5: 
-			System.exit(0);
+		try{
+			try{
+			
+				System.out.println("Enter first number");
+				int num1 = sc.nextInt();
+				System.out.println("Enter second number");
+				int num2 = sc.nextInt();
+			
+				System.out.println("Enter 1 for Addition || Enter 2 for Subtraction || Enter 3 for Multiplication || Enter 4 for Divition|| Enter 5 for Exit");
+				int choices=sc.nextInt();
+			}
+			
+			switch(choices){
+			case 1: 
+				rn.add(num1, num2);
+				break;
+			case 2: 
+				rn.subs(num1, num2);
+				break;
+			case 3: 
+				rn.multi(num1, num2);
+				break;
+			case 4: 
+				rn.divi(num1, num2);
+				break;
+			case 5: 
+				System.exit(0);
+			default:
+				System.out.println("Plz enter the screen numbers");
+			}
+			finally{
+				sc.close(); 
+			}
+		
 		}
-	
+		catch(ArithemeticException ae){
+			System.out.println("Doesn't divisibel by zero"+ae);;
+		}
+		catch(InputMissmatchException im){
+			System.out.println("Plz enter valid inters number"+im);
+		}
+		catch(Exception e){
+			System.out.println("Doesn't match input numbers"+e);
+		}
+		 
 	}
-	catch(Exception e){
-		e.printStackTrace();
-	}
-	
-        sc.close();  
-    }
 }
