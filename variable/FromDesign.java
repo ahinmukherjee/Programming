@@ -9,6 +9,11 @@ public class FromDesign{
             String name2= sc.nextLine();
             System.out.println("Enter Your age:\t");
             int age= sc.nextInt();
+	        if(age<0){
+				System.out.println("Age is cannot negetive");
+				System.exit(0);
+	        }
+	        sc.nextLine();
             System.out.println("Enter your blood group:\t");
             String blood= sc.nextLine();
             System.out.println("Your name is:"+name+" "+name2);
