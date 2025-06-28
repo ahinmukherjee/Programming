@@ -4,7 +4,7 @@ public class PasswordCheck {
     public static void main(String args[]){
 	    Scanner sc = new Scanner(System.in);
 	    System.out.print("Enter Username: ");
- 	    String username = sc.nextLine();
+ 	    // String username = sc.nextLine();
 	    System.out.print("Enter Password: ");
 	    String password = sc.nextLine();
 	    PasswordIdentify pc= new PasswordIdentify();

@@ -1,6 +1,6 @@
 import java.util.*;
 class SignalTest {
-     void red(){
+    void red(){
 		System.out.println("Signal is Red.");	
 	}
 	void yellow(){
@@ -17,7 +17,7 @@ public class TrafficSignelTest {
         SignalTest st= new SignalTest();
         try{
                 System.out.println("Plz enter traffic signel");
-                String nu = sc.nextLine();
+                // String nu = sc.nextLine();
                 System.out.println("Enter 1 for Red || Enter 2 for Yellow || Enter 3 for Green || Enter for exit");
                 int choices=sc.nextInt();
             
