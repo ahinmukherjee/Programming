@@ -7,7 +7,7 @@ class SuperClassS{
 	}
 }
 
-class SuperClass2 extends SuperClassS  {
+class SuperClassS2 extends SuperClassS  {
 	void mul(){
 		Scanner s= new Scanner(System.in);
 		System.out.println("Enter number");
@@ -19,9 +19,9 @@ class SuperClass2 extends SuperClassS  {
 	}
 }
 
-class MultilevelInheritanceJava extends SuperClass2 {
+class MultilevelInheritanceJava extends SuperClassS2 {
 	public static void main(String args[]){
-		SuperClass2 sc= new SuperClass2();
+		SuperClassS2 sc= new SuperClassS2();
 		sc.mul();
 	}
 	
